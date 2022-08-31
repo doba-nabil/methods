@@ -113,6 +113,11 @@ body {
     outline: 0 !important;
 }
 
+.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item {
+    -ms-touch-action: auto;
+    touch-action: auto;
+}
+
 hr {
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
