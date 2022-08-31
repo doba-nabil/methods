@@ -46,8 +46,9 @@ AOS.init({
     $.Scrollax();
 
     var carousel = function () {
+        var items = $('.slider-item');
         $('.home-slider').owlCarousel({
-            loop: true,
+            loop: items.length > 1 ? true : false,
             autoplay: false,
             margin: 0,
             animateOut: 'fadeOut',
@@ -68,6 +69,32 @@ AOS.init({
                 1000: {
                     items: 1,
                     nav: false
+                }
+            }
+        });
+        $('.description-slider').owlCarousel({
+            loop: true,
+            autoplay: false,
+            margin: 0,
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
+            nav: false,
+            autoplayHoverPause: false,
+            items: 1,
+            dots: true,
+            navText: ["<span class='ion-md-arrow-dropleft'></span>", "<span class='ion-md-arrow-dropright'></span>"],
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                600: {
+                    items: 1,
+                    nav: true
+                },
+                1000: {
+                    items: 1,
+                    nav: true
                 }
             }
         });
@@ -93,6 +120,31 @@ AOS.init({
                 },
                 1000: {
                     items: 3,
+                }
+            }
+        });
+        $('.courses-slider').owlCarousel({
+            loop: true,
+            autoplay: true,
+            margin: 20,
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
+            nav: true,
+            dots: true,
+            autoplayHoverPause: false,
+            items: 1,
+            navText: ["<span class='ion-md-arrow-dropleft'></span>", "<span class='ion-md-arrow-dropright'></span>"],
+            responsive: {
+                0: {
+                    nav: false,
+                    items: 2,
+                },
+                600: {
+                    nav: false,
+                    items: 3,
+                },
+                1000: {
+                    items: 4,
                 }
             }
         });
