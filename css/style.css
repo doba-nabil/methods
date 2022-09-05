@@ -14045,6 +14045,16 @@ textarea.form-control {
 .filter-page{
 
 }
+.filter-sections{
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid var(--secondry-color);
+}
+.filter-sectionsp:nth-last-child(1){
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0px solid var(--secondry-color);
+}
 .filter-page .filter-head{
     text-align: center;
     background: var(--secondry-color);
@@ -14612,7 +14622,15 @@ textarea.form-control {
         margin-top: 1em;
 
     }
-
+    .products-blocks .nav-pills{
+        display: block;
+    }
+    .ftco-menu .nav-pills .nav-link{
+        margin: 0;
+    }
+    .ftco-section{
+        padding-bottom:0!important;
+    }
     .product-reviews .add_review .btn{
         width: 100%;
     }
