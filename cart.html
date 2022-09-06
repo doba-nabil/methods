@@ -33,7 +33,7 @@
     <meta property='og:image' content='images/favicon.png'>
     <meta name='twitter:image' content='images/favicon.png'>
     <meta property='og:type' content='Methods'>
-    <title>Methods - Courses</title>
+    <title>Methods - Cart</title>
 
     <!--<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">-->
     <!--<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">-->
@@ -43,7 +43,6 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/ionicons.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
@@ -51,6 +50,10 @@
     <link rel="stylesheet" href="css/jquery.timepicker.css">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
+    <!--addition css-->
+    <link href="css/fotorama.css" rel="stylesheet">
+    <link href="css/star-rating.min.css" rel="stylesheet">
+    <!--end addition css-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -79,7 +82,6 @@
     </div>
 </div>
 <!--end subscribe modal-->
-
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
         <a class="navbar-brand" href="#">
@@ -114,117 +116,194 @@
     </div>
 </nav>
 <!-- END nav -->
-<section class="home-slider owl-carousel">
-    <div class="slider-item" style="background-image: url(images/bg_1.jpg);">
+<section class="small home-slider owl-carousel">
+    <div class="slider-item"
+         style="background-image: url(https://vevok-chef.com//media/catalog/category/category-banner.jpg);"
+         data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
-            <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
-                <div class="col-md-8 col-sm-12 text-center ftco-animate">
-                    <h1 class="mb-4">Courses</h1>
+            <div class="row slider-text justify-content-center align-items-center">
+
+                <div class="col-md-7 col-sm-12 text-center ftco-animate">
+                    <h1 class="mb-3 mt-5 bread">Shopping Cart</h1>
+                    <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span>
+                        <span>Shopping Cart</span></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cart-page">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-responsive">
+                    <table id="myTable" class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Name</th>
+                            <th>Info</th>
+                            <th>Qty</th>
+                            <th>Price</th>
+                            <th><span id="amount" class="amount">Amount</span></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="product-img">
+                                    <div class="img-prdct"><img
+                                            src="images/product.jpeg"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Product Name</p>
+                            </td>
+                            <td>
+                                <small>
+                                    <b>GRIND TYPE</b> : Product One
+                                </small>
+                                <small>
+                                    <b>Size</b> : Small
+                                </small>
+                            </td>
+                            <td>
+                                <div class="button-container">
+                                    <button class="cart-qty-plus" type="button" value="+">+</button>
+                                    <input type="text" name="qty" min="0" class="qty form-control" value="1"/>
+                                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                                </div>
+                            </td>
+                            <td>
+                                <input type="text" value="72" class="price form-control" disabled>
+                                SAR
+                            </td>
+                            <td align="right"><span id="amount" class="amount">72</span> SAR</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="product-img">
+                                    <div class="img-prdct"><img
+                                            src="images/product.jpeg"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Product Name</p>
+                            </td>
+                            <td>
+                                <small>
+                                    <b>GRIND TYPE</b> : Product One
+                                </small>
+                                <small>
+                                    <b>Size</b> : Small
+                                </small>
+                            </td>
+                            <td>
+                                <div class="button-container">
+                                    <button class="cart-qty-plus" type="button" value="+">+</button>
+                                    <input type="text" name="qty" min="0" class="qty form-control" value="0"/>
+                                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                                </div>
+                            </td>
+                            <td>
+                                <input type="text" value="125" class="price form-control" disabled>
+                                SAR
+                            </td>
+                            <td align="right"><span id="amount" class="amount">0</span> SAR</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="product-img">
+                                    <div class="img-prdct"><img
+                                            src="images/product.jpeg"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Product Name</p>
+                            </td>
+                            <td>
+                                <small>
+                                    <b>GRIND TYPE</b> : Product One
+                                </small>
+                                <small>
+                                    <b>Size</b> : Small
+                                </small>
+                            </td>
+                            <td>
+                                <div class="button-container">
+                                    <button class="cart-qty-plus" type="button" value="+">+</button>
+                                    <input type="text" name="qty" min="0" class="qty form-control" value="0"/>
+                                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                                </div>
+                            </td>
+                            <td>
+                                <input type="text" value="250" class="price form-control" disabled>
+                                SAR
+                            </td>
+                            <td align="right"><span id="amount" class="amount">0</span> SAR</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="product-img">
+                                    <div class="img-prdct"><img
+                                            src="images/product.jpeg"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Product Name</p>
+                            </td>
+                            <td>
+                                <small>
+                                    <b>GRIND TYPE</b> : Product One
+                                </small>
+                                <small>
+                                    <b>Size</b> : Small
+                                </small>
+                            </td>
+                            <td>
+                                <div class="button-container">
+                                    <button class="cart-qty-plus" type="button" value="+">+</button>
+                                    <input type="text" name="qty" min="0" class="qty form-control" value="0"/>
+                                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                                </div>
+                            </td>
+                            <td>
+                                <input type="text" value="300" class="price form-control" disabled>
+                                SAR
+                            </td>
+                            <td align="right"><span id="amount" class="amount">0</span> SAR</td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <td colspan="5">
+                                <strong class="first">
+                                    <b>TOTAL</b>
+                                </strong>
+                            </td>
+                            <td colspan="1">
+                                <strong class="second">
+                                    <b> <span id="total" class="total">0</span> SAR </b>
+                                </strong>
+                            </td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="cart-btns">
+                    <a href="#" class="btn btn-primary">Continue Shopping</a>
+                    <a href="#" class="btn btn-primary">CheckOut</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- end slider section -->
-<section class="ftco-section courses-section ftco-menu filter-page">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-7 heading-section ftco-animate text-center">
-                <h2 class="mb-4">Our Corses</h2>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                    looking at its layout</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="products-blocks">
-                    <div>
-                        <div class="nav-pills">
-                            <a class="active nav-link" id="all">Show All</a>
-                            <a class=" nav-link" id="a">Show A</a>
-                            <a class="nav-link" id="b">Show B</a>
-                            <a class=" nav-link" id="c">Show C</a>
-                            <a class=" nav-link" id="d">Show D</a>
-                        </div>
-
-                        <div class="row" id="parent">
-                            <div class="col-md-3 a b">
-                                <div class="menu-entry">
-                                    <a href="course.html" class="img"
-                                       style="background-image: url(https://previews.123rf.com/images/natalimis/natalimis1705/natalimis170500105/78114060-online-course-in-hand-businessman-on-blurred-background-.jpg);"></a>
-                                    <div class="text text-center pt-4">
-                                        <h3><a href="course.html">Coffee Capuccino</a></h3>
-                                        <p>A small river named Duden flows by their place and supplies</p>
-                                        <p class="price"> From <span>$5.90</span></p>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 a">
-                                <div class="menu-entry">
-                                    <a href="course.html" class="img"
-                                       style="background-image: url(https://previews.123rf.com/images/natalimis/natalimis1705/natalimis170500105/78114060-online-course-in-hand-businessman-on-blurred-background-.jpg);"></a>
-                                    <div class="text text-center pt-4">
-                                        <h3><a href="course.html">Coffee Capuccino</a></h3>
-                                        <p>A small river named Duden flows by their place and supplies</p>
-                                        <p class="price"> From <span>$5.90</span></p>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 c d a">
-                                <div class="menu-entry">
-                                    <a href="course.html" class="img"
-                                       style="background-image: url(https://previews.123rf.com/images/natalimis/natalimis1705/natalimis170500105/78114060-online-course-in-hand-businessman-on-blurred-background-.jpg);"></a>
-                                    <div class="text text-center pt-4">
-                                        <h3><a href="course.html">Coffee Capuccino</a></h3>
-                                        <p>A small river named Duden flows by their place and supplies</p>
-                                        <p class="price"> From <span>$5.90</span></p>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 d">
-                                <div class="menu-entry">
-                                    <a href="course.html" class="img"
-                                       style="background-image: url(https://previews.123rf.com/images/natalimis/natalimis1705/natalimis170500105/78114060-online-course-in-hand-businessman-on-blurred-background-.jpg);"></a>
-                                    <div class="text text-center pt-4">
-                                        <h3><a href="course.html">Coffee Capuccino</a></h3>
-                                        <p>A small river named Duden flows by their place and supplies</p>
-                                        <p class="price"> From <span>$5.90</span></p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                        </li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">Next</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
-</section>
-<!--end products section-->
+<!--footer-->
 <footer class="ftco-footer ftco-section img">
     <div class="overlay"></div>
     <div class="container">
@@ -284,7 +363,6 @@
         </div>
     </div>
 </footer>
-
 <!-- loader -->
 <div id="ftco-loader" class="show fullscreen">
     <svg class="circular" width="48px" height="48px">
@@ -302,25 +380,57 @@
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/jquery.stellar.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/aos.js"></script>
 <script src="js/jquery.animateNumber.min.js"></script>
 <script src="js/bootstrap-datepicker.js"></script>
 <script src="js/jquery.timepicker.min.js"></script>
 <script src="js/scrollax.min.js"></script>
+<!--addition js-->
+<script src="js/fotorama.js"></script>
+<script src="js/star-rating.min.js"></script>
+<!--end addition js-->
 <script src="js/main.js"></script>
+
 <script>
-    $(document).ready(function() {
-        var $btns = $('.nav-link').click(function() {
-            if (this.id == 'all') {
-                $('#parent > div').fadeIn(450);
-            } else {
-                var $el = $('.' + this.id).fadeIn(450);
-                $('#parent > div').not($el).hide();
-            }
-            $btns.removeClass('active');
-            $(this).addClass('active');
-        })
+    $(document).ready(function () {
+        update_amounts();
+        $('.qty, .price').on('keyup keypress blur change', function (e) {
+            update_amounts();
+        });
+    });
+
+    function update_amounts() {
+        var sum = 0.0;
+        $('#myTable > tbody  > tr').each(function () {
+            var qty = $(this).find('.qty').val();
+            var price = $(this).find('.price').val();
+            var amount = (qty * price)
+            sum += amount;
+            $(this).find('.amount').text('' + amount);
+        });
+        $('.total').text(sum);
+    }
+
+    var incrementQty;
+    var decrementQty;
+    var plusBtn = $(".cart-qty-plus");
+    var minusBtn = $(".cart-qty-minus");
+    var incrementQty = plusBtn.click(function () {
+        var $n = $(this)
+            .parent(".button-container")
+            .find(".qty");
+        $n.val(Number($n.val()) + 1);
+        update_amounts();
+    });
+    var decrementQty = minusBtn.click(function () {
+        var $n = $(this)
+            .parent(".button-container")
+            .find(".qty");
+        var QtyVal = Number($n.val());
+        if (QtyVal > 0) {
+            $n.val(QtyVal - 1);
+        }
+        update_amounts();
     });
 </script>
 </body>
