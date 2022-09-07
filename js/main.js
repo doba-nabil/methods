@@ -2,6 +2,28 @@ AOS.init({
     duration: 800,
     easing: 'slide'
 });
+$(function () {
+    $('.cart').click(function () {
+        $('.collapsed-cart').addClass('open');
+        $('.shopping-cart').addClass('open');
+        $('body').css('overflow', 'hidden');
+    });
+
+    $('.close-cart').click(function () {
+        $('.collapsed-cart').removeClass('open');
+        $('.shopping-cart').removeClass('open');
+        $('body').css('overflow', 'auto');
+    });
+});
+$(function () {
+    var $first_height = $('.close-cart');
+    var $second_height = $('.proceed');
+    var $main_height = $('#cart');
+    var $window = $(window).on('resize', function () {
+        var height = $(this).height() - ($first_height.height() + $second_height.height());
+        $main_height.height(height);
+    }).trigger('resize');
+});
 
 (function ($) {
 
@@ -397,13 +419,13 @@ AOS.init({
 
 })(jQuery);
 
-owl.on('changed.owl.carousel', function(event) {
-    $(".owl-item video").each(function(index, value) {
+owl.on('changed.owl.carousel', function (event) {
+    $(".owl-item video").each(function (index, value) {
         this.pause();
         this.currentTime = 0;
 
     });
-    $(".owl-item.active video").each(function(index, value) {
+    $(".owl-item.active video").each(function (index, value) {
         this.play();
     });
 });
