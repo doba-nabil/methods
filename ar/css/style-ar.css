@@ -1,0 +1,139 @@
+body{
+    direction: rtl;
+    text-align: right;
+}
+.owl-carousel{
+    direction: ltr;
+}
+.collapsed-cart {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 1000%;
+    background: rgba(3, 3, 3, 0.8);
+    height: 100%;
+    width: 100%;
+    z-index: 99999;
+    position: fixed;
+}
+.ftco-footer .ftco-footer-widget.first-widget{
+    text-align: right;
+}
+.ftco-footer .ftco-footer-widget.last-widget{
+    text-align: left;
+}
+ul.ftco-footer-social {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+.ftco-footer .footer-logo {
+    margin-right:auto;
+    margin-left: 1rem;
+}
+.news-letter .bt {
+    margin-right: auto;
+    margin-left: auto;
+}
+.ftco-navbar-light.scrolled .nav-item > .nav-link{
+    text-align: right;
+}
+ul{
+    padding-inline-start: 0;
+}
+.dropdown-menu{
+    text-align: right;
+    left: auto;
+    right: 0;
+}
+.collapsed-cart.open {
+    left: auto;
+    right: 0;
+}
+.collapsed-cart .shopping-cart{
+    right: auto;
+    left: 0;
+    border-radius:0 20px 20px 0;
+}
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link{
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.dropdown-toggle::after {
+    margin-right: 0.255em;
+    margin-left: 0;
+}
+.ml-auto, .mx-auto{
+    margin-right: auto;
+    margin-left: 0!important;
+}
+.ftco-navbar-light .navbar-nav > .nav-item.cart > a .bag {
+
+    left: 5px;
+    right: auto;
+
+}
+.course-page{
+    text-align: right;
+}
+.course-page blockquote {
+    border-left: 0px solid black;
+    border-right: 4px solid black;
+}
+.filter-page .country-list input[type="checkbox"] + label:before{
+    right: 2em;
+    left: auto;
+}
+.featurette:nth-child(odd) , .featurette:nth-child(even){
+    text-align: right;
+}
+.new_check{
+    text-align: right;
+}
+.boxes input[type="checkbox"] + label {
+    padding-right: 35px;
+
+
+}
+.boxes input[type="checkbox"] + label:before{
+    right: 0em;
+    left: auto;
+}
+.login-page .log .input-cont label{
+    right: 0;
+    left: auto;
+}
+.product-page .product-details .form-group .form-control{
+    padding-right: 20px!important;
+}
+.product-details .form-group .icon{
+    right: auto;
+    left: 2em;
+}
+.product-details{
+    text-align: right;
+}
+.product-reviews #testimonials .share{
+    right: 0;
+    left: auto;
+}
+.product-reviews #testimonials .name-user .vr-buyer{
+    float: left;
+}
+.product-reviews #testimonials .profile-img{
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+@media (max-width: 767.98px){
+    .ftco-footer .footer-logo {
+        margin-right: 0rem;
+        margin-left: 0rem;
+    }
+}
+
