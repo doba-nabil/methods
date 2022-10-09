@@ -52,6 +52,77 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .image_upload{
+            height:200px;
+            position:relative;
+            max-width: 220px;
+            margin: auto;
+        }
+        .imageWrapper{
+            border: 3px solid #888;
+            width:70%;
+            padding-bottom:70%;
+            border-radius:50%;
+            overflow:hidden;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+        }
+        .imageWrapper img{
+            height:105%;
+            width:initial;
+            max-height:100%;
+            max-width: initial;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .file-upload {
+            position: absolute;
+            border: none;
+            width:100%;
+            height: 100%;
+            overflow: hidden;
+            right: 0;
+            left: 0;
+            text-align:center;
+            color:#fff;
+            font-size:1.2em;
+            background: transparent;
+            display:inline;
+        }
+        .file-upload input.file-input {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: 0;
+            width: 100%;
+            padding: 0;
+            font-size: 20px;
+            cursor: pointer;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            height:100%!important;
+        }
+
+        .choose::-webkit-file-upload-button {
+            color: white;
+            display: inline-block;
+            background: var(--main-color);
+            border: none;
+            padding: 7px 15px;
+            font-weight: 700;
+            border-radius: 3px;
+            white-space: nowrap;
+            cursor: pointer;
+            font-size: 10pt;
+        }
+    </style>
 </head>
 <body>
 <!--subscribe modal-->
@@ -332,6 +403,22 @@
                    </div>
                     <form>
                         <div class="input-cont">
+                            <label>Avatar</label>
+                            <div class="row">
+                                <div class="col-md-12 text-center image_upload">
+                                    <div class="imageWrapper">
+                                        <img class="image" src="https://cdn.pixabay.com/photo/2017/02/07/02/16/cloud-2044823_960_720.png">
+                                    </div>
+                                    <button type="button" class="file-upload">
+                                        <input type="file" class="file-input">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="border"></div>
+                        </div>
+
+
+                        <div class="input-cont">
                             <input type="text">
                             <label>First Name</label>
                             <div class="border"></div>
@@ -351,9 +438,30 @@
                             <label>Password</label>
                             <div class="border"></div>
                         </div>
+
+                        <div class="input-cont">
+                            <span>Attach your screenshort</span>
+                            <input type="file" multiple class="choose">
+                            <div class="border"></div>
+                        </div>
+
+                        <div class="input-cont">
+                            <div class="form-group">
+                                <div class="select-wrap">
+                                    <select name="" class="form-control">
+                                        <option value="" disabled hidden selected="selected">Select Name</option>
+                                        <option value="">Select Option</option>
+                                        <option value="">Select Option</option>
+                                        <option value="">Select Option</option>
+                                        <option value="">Select Option</option>
+                                        <option value="">Select Option</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="border"></div>
+                        </div>
                         <div class="clearfix"></div>
                         <button class="btn btn-primary" type="submit">Sign Up</button>
-
                     </form>
                 </div>
             </div>
@@ -447,6 +555,20 @@
 <script src="js/jquery.timepicker.min.js"></script>
 <script src="js/scrollax.min.js"></script>
 <script src="js/main.js"></script>
+<script>
+    $('.file-input').change(function(){
+        var curElement = $(this).parent().parent().find('.image');
+        console.log(curElement);
+        var reader = new FileReader();
 
+        reader.onload = function (e) {
+            // get loaded data and render thumbnail.
+            curElement.attr('src', e.target.result);
+        };
+
+        // read the image file as a data URL.
+        reader.readAsDataURL(this.files[0]);
+    });
+</script>
 </body>
 </html>

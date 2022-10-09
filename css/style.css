@@ -15159,3 +15159,7 @@ textarea.form-control {
 .small.owl-carousel.home-slider .slider-item .slider-text , .small.owl-carousel.home-slider , .small.owl-carousel.home-slider .slider-item{
     height: 70vh!important;
 }
+
+.login-page .log .input-cont input{
+    color: #fff;
+}
