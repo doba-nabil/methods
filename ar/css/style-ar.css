@@ -137,3 +137,8 @@ ul{
     }
 }
 
+.ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu{
+    right: auto;
+    left: 0;
+}
+

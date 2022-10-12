@@ -82,169 +82,6 @@
     </div>
 </div>
 <!--end subscribe modal-->
-<!--cart-->
-<div class="collapsed-cart">
-    <div id="shopping-cart" class="shopping-cart">
-        <a href="javascript:void(0)" class="closebtn close-cart">Close Shopping Cart</a>
-        <main id="cart">
-            <div class="cart-content">
-                <div class="cartItem">
-                    <div class="mb-2">
-                        <img src="images/product.jpeg" alt="art image">
-                    </div>
-                    <div class="cartItemInfo">
-                        <h6>Dark Art 1</h6>
-                        <p class="pl-1 mb-0">
-                            Size :
-                            <small>Small</small>
-                        </p>
-                        <p class="pl-1 mb-0">
-                            Type :
-                            <small>type</small>
-                        </p>
-                    </div>
-                    <p class="cartItemQuantity">
-                        Qty : 1
-                    </p>
-                    <p class="cartItemPrice">
-                        66
-                        <small>SAR</small>
-                    </p>
-                </div>
-
-                <div class="cartItem">
-                    <div class="mb-2">
-                        <img src="images/product.jpeg" alt="art image">
-                    </div>
-                    <div class="cartItemInfo">
-                        <h6>Dark Art 1</h6>
-                        <p class="pl-1 mb-0">
-                            Size :
-                            <small>Small</small>
-                        </p>
-                        <p class="pl-1 mb-0">
-                            Type :
-                            <small>type</small>
-                        </p>
-                    </div>
-                    <p class="cartItemQuantity">
-                        Qty : 1
-                    </p>
-                    <p class="cartItemPrice">
-                        66
-                        <small>SAR</small>
-                    </p>
-                </div>
-
-                <div class="cartItem">
-                    <div class="mb-2">
-                        <img src="images/product.jpeg" alt="art image">
-                    </div>
-                    <div class="cartItemInfo">
-                        <h6>Dark Art 1</h6>
-                        <p class="pl-1 mb-0">
-                            Size :
-                            <small>Small</small>
-                        </p>
-                        <p class="pl-1 mb-0">
-                            Type :
-                            <small>type</small>
-                        </p>
-                    </div>
-                    <p class="cartItemQuantity">
-                        Qty : 1
-                    </p>
-                    <p class="cartItemPrice">
-                        66
-                        <small>SAR</small>
-                    </p>
-                </div>
-
-                <div class="cartItem">
-                    <div class="mb-2">
-                        <img src="images/product.jpeg" alt="art image">
-                    </div>
-                    <div class="cartItemInfo">
-                        <h6>Dark Art 1</h6>
-                        <p class="pl-1 mb-0">
-                            Size :
-                            <small>Small</small>
-                        </p>
-                        <p class="pl-1 mb-0">
-                            Type :
-                            <small>type</small>
-                        </p>
-                    </div>
-                    <p class="cartItemQuantity">
-                        Qty : 1
-                    </p>
-                    <p class="cartItemPrice">
-                        66
-                        <small>SAR</small>
-                    </p>
-                </div>
-
-                <div class="cartItem">
-                    <div class="mb-2">
-                        <img src="images/product.jpeg" alt="art image">
-                    </div>
-                    <div class="cartItemInfo">
-                        <h6>Dark Art 1</h6>
-                        <p class="pl-1 mb-0">
-                            Size :
-                            <small>Small</small>
-                        </p>
-                        <p class="pl-1 mb-0">
-                            Type :
-                            <small>type</small>
-                        </p>
-                    </div>
-                    <p class="cartItemQuantity">
-                        Qty : 1
-                    </p>
-                    <p class="cartItemPrice">
-                        66
-                        <small>SAR</small>
-                    </p>
-                </div>
-
-                <div class="cartItem">
-                    <div class="mb-2">
-                        <img src="images/product.jpeg" alt="art image">
-                    </div>
-                    <div class="cartItemInfo">
-                        <h6>Dark Art 1</h6>
-                        <p class="pl-1 mb-0">
-                            Size :
-                            <small>Small</small>
-                        </p>
-                        <p class="pl-1 mb-0">
-                            Type :
-                            <small>type</small>
-                        </p>
-                    </div>
-                    <p class="cartItemQuantity">
-                        Qty : 1
-                    </p>
-                    <p class="cartItemPrice">
-                        66
-                        <small>SAR</small>
-                    </p>
-                </div>
-            </div>
-            <div class="proceed">
-                <div class="total-div">
-                    <h5>Total</h5>
-                    <p id="total">$138.40</p>
-                </div>
-                <a class="shopnow" href="#">
-                    Checkout
-                </a>
-            </div>
-        </main>
-    </div>
-</div>
-<!--end cart-->
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="top-header">
         <div class="container">
@@ -281,9 +118,110 @@
             <img src="images/logo.png" alt="LOGO">
         </a>
         <ul class="navbar-nav ml-auto ul-cart">
-            <li class="nav-item cart"><a class="nav-link"><span
-                    class="icon icon-shopping_cart"></span><span
-                    class="bag d-flex justify-content-center align-items-center"><small>1</small></span></a></li>
+            <li class="nav-item dropdown cart">
+                <a class="nav-link dropdown-toggle" id="cartdrop" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                   <span
+                           class="icon icon-shopping_cart"></span><span
+                        class="bag d-flex justify-content-center align-items-center"><small>1</small></span>
+                </a>
+                <div class="dropdown-menu cartooo" aria-labelledby="cartdrop">
+                    <div id="shopping-cart" class="shopping-cart">
+                        <div class="proceed">
+                            <div class="head-div">
+                                <p>3 Item(s)</p>
+                                <a href="#">
+                                    View Cart
+                                </a>
+                            </div>
+                        </div>
+                        <main id="cart">
+                            <div class="cart-content">
+                                <div class="cartItem">
+                                    <div class="mb-2 main_image_delete">
+                                        <div class="delete text-danger">
+                                            <a href="#"><i class="fa fa-times"></i></a>
+                                        </div>
+                                        <img src="images/product.jpeg" alt="art image">
+                                    </div>
+                                    <div class="cartItemInfo">
+                                        <h6>Dark Art 1</h6>
+                                        <p class="pl-1 mb-0">
+                                            Size :
+                                            <small>Small</small>
+                                        </p>
+                                        <p class="pl-1 mb-0">
+                                            Type :
+                                            <small>type</small>
+                                        </p>
+                                    </div>
+                                    <p class="cartItemPrice">
+                                        1 x 66
+                                        <small>SAR</small>
+                                    </p>
+                                </div>
+
+                                <div class="cartItem">
+                                    <div class="mb-2 main_image_delete">
+                                        <div class="delete text-danger">
+                                            <a href="#"><i class="fa fa-times"></i></a>
+                                        </div>
+                                        <img src="images/product.jpeg" alt="art image">
+                                    </div>
+                                    <div class="cartItemInfo">
+                                        <h6>Dark Art 1</h6>
+                                        <p class="pl-1 mb-0">
+                                            Size :
+                                            <small>Small</small>
+                                        </p>
+                                        <p class="pl-1 mb-0">
+                                            Type :
+                                            <small>type</small>
+                                        </p>
+                                    </div>
+                                    <p class="cartItemPrice">
+                                        1 x 66
+                                        <small>SAR</small>
+                                    </p>
+                                </div>
+
+                                <div class="cartItem">
+                                    <div class="mb-2 main_image_delete">
+                                        <div class="delete text-danger">
+                                            <a href="#"><i class="fa fa-times"></i></a>
+                                        </div>
+                                        <img src="images/product.jpeg" alt="art image">
+                                    </div>
+                                    <div class="cartItemInfo">
+                                        <h6>Dark Art 1</h6>
+                                        <p class="pl-1 mb-0">
+                                            Size :
+                                            <small>Small</small>
+                                        </p>
+                                        <p class="pl-1 mb-0">
+                                            Type :
+                                            <small>type</small>
+                                        </p>
+                                    </div>
+                                    <p class="cartItemPrice">
+                                        1 x 66
+                                        <small>SAR</small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="proceed">
+                                <div class="total-div">
+                                    <h5>Total</h5>
+                                    <p id="total">$138.40</p>
+                                </div>
+                                <a class="shopnow" href="#">
+                                    Checkout
+                                </a>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </li>
         </ul>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -321,7 +259,6 @@
 
     </div>
 </nav>
-<!-- END nav -->
 <!-- END nav -->
 <section class="small home-slider owl-carousel">
     <div class="slider-item" style="background-image: url(images/cofe.jpg);" data-stellar-background-ratio="0.5">
