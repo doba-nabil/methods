@@ -15273,6 +15273,7 @@ textarea.form-control {
     font-size: 100px;
     line-height: 200px;
     margin-left:-15px;
+    font-style: inherit;
 }
 /*success*/
 .payment-status-card.success-payment h1 {

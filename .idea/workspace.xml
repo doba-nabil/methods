@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccbbc946-fdb5-4cb3-bdb5-40f40d260519" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/ar/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/ar/error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,16 +13,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-23524">
-              <caret line="14241" column="24" lean-forward="true" selection-start-line="14241" selection-start-column="24" selection-end-line="14241" selection-end-column="24" />
+            <state relative-caret-position="258">
+              <caret line="15275" column="24" selection-start-line="15275" selection-start-column="24" selection-end-line="15275" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="error.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="error.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ar/error.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="226">
@@ -43,7 +42,7 @@
       <find>id=&quot;pl</find>
       <find>plyr</find>
       <find>select</find>
-      <find>Based On</find>
+      <find />
       <find>line-height</find>
       <find>.collapsed-cart</find>
       <find>.shopping-cart.open</find>
@@ -62,7 +61,7 @@
       <find>shipment-details</find>
       <find>bg-white</find>
       <find>@media</find>
-      <find>.login-page .log .input-cont input:focus + label</find>
+      <find />
       <find>bg</find>
       <find>snow</find>
       <find>font-family</find>
@@ -125,7 +124,6 @@
         <option value="$PROJECT_DIR$/orders.html" />
         <option value="$PROJECT_DIR$/email-order.html" />
         <option value="$PROJECT_DIR$/profile.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/ar/css/style.css" />
         <option value="$PROJECT_DIR$/ar/css/style-ar.css" />
         <option value="$PROJECT_DIR$/ar/my_courses.html" />
@@ -135,6 +133,7 @@
         <option value="$PROJECT_DIR$/ar/success.html" />
         <option value="$PROJECT_DIR$/error.html" />
         <option value="$PROJECT_DIR$/ar/error.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -235,15 +234,15 @@
       <workItem from="1665331616272" duration="10096000" />
       <workItem from="1665493712647" duration="962000" />
       <workItem from="1665603190896" duration="1288000" />
-      <workItem from="1666142232317" duration="8380000" />
+      <workItem from="1666142232317" duration="8790000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144982000" />
+    <option name="totallyTimeSpent" value="145392000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22390318" />
@@ -712,17 +711,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23524">
-          <caret line="14241" column="24" lean-forward="true" selection-start-line="14241" selection-start-column="24" selection-end-line="14241" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ar/error.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="268" column="34" selection-start-line="268" selection-start-column="34" selection-end-line="268" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="15275" column="24" selection-start-line="15275" selection-start-column="24" selection-end-line="15275" selection-end-column="24" />
         </state>
       </provider>
     </entry>
