@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name='robots' content="index, follow, all">
+    <meta name="description" content="HomePage">
+    <meta property="og:description" content="Methods HomePage">
+    <meta name='twitter:description' content='Methods HomePage'>
+    <link rel='shortcut icon' type='image/x-icon' href="images/favicon.png">
+    <meta name="theme-color" content="#FFF">
+    <!-- Windows Phone -->
+    <meta name="msapplication-starturl" content="/">
+    <meta name="msapplication-TileColor" content="#FFF">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.html">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-title" content="Methods">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <!-- Android -->
+    <link rel='icon' href='images/favicon.png'>
+    <meta name="application-name" content="Methods">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Other -->
+    <meta name="layoutmode" content="fitscreen/standard">
+    <!-- Open Graph -->
+    <meta property='og:title' content='Methods'>
+    <meta name='twitter:card' content='Methods'>
+    <meta name='twitter:title' content='Methods'>
+    <meta property='og:site_name' content='Methods'>
+    <meta property='og:image' content='images/favicon.png'>
+    <meta name='twitter:image' content='images/favicon.png'>
+    <meta property='og:type' content='Methods'>
+    <title>Methods - Order Details</title>
+
+    <!--<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">-->
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+
+    <!--addition css-->
+    <link href="css/fotorama.css" rel="stylesheet">
+    <link href="css/star-rating.min.css" rel="stylesheet">
+    <!--end addition css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-ar.css">
+</head>
+<body>
+<!--subscribe modal-->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <section class="news-letter" id="News-letter">
+                    <div class="news ">
+                        <div class="container">
+                            <h1 class="news-heading">Subscribe To Get The Latest News About Us</h1>
+                            <p class="des how-de">Drop your email below to
+                                get daliy update about us</p>
+                            <form action="">
+                                <input type="email" maxlength="50" required
+                                       placeholder="Enter your email address">
+                                <button class="bt">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end subscribe modal-->
+
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light dark-nav" id="ftco-navbar">
+    <div class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="selection-div">
+
+                        <div class="dropdown country-drop">
+                            <a class="btn top-btn dropdown-toggle" href="#" role="button" id="countrydrop"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Country
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="countrydrop">
+                                <li><a class="dropdown-item" href="#">Egypt</a></li>
+                                <li><a class="dropdown-item" href="#">Saudi Arabia</a></li>
+                                <li><a class="dropdown-item" href="#">Qatar</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown lang-drop">
+                            <a class="btn top-btn dropdown-toggle" href="#" role="button" id="langdrop"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                English
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="langdrop">
+                                <li><a class="dropdown-item" href="#">Arabic</a></li>
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="LOGO">
+        </a>
+        <ul class="navbar-nav ml-auto ul-cart">
+            <li class="nav-item dropdown cart">
+                <a class="nav-link dropdown-toggle" id="cartdrop" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                   <span
+                           class="icon icon-shopping_cart"></span><span
+                        class="bag d-flex justify-content-center align-items-center"><small>1</small></span>
+                </a>
+                <div class="dropdown-menu cartooo" aria-labelledby="cartdrop">
+                    <div id="shopping-cart" class="shopping-cart">
+                        <div class="proceed">
+                            <div class="head-div">
+                                <p>3 Item(s)</p>
+                                <a href="#">
+                                    View Cart
+                                </a>
+                            </div>
+                        </div>
+                        <main id="cart">
+                            <div class="cart-content">
+                                <div class="cartItem">
+                                    <div class="mb-2 main_image_delete">
+                                        <div class="delete text-danger">
+                                            <a href="#"><i class="fa fa-times"></i></a>
+                                        </div>
+                                        <img src="images/product.jpeg" alt="art image">
+                                    </div>
+                                    <div class="cartItemInfo">
+                                        <h6>Dark Art 1</h6>
+                                        <p class="pl-1 mb-0">
+                                            Size :
+                                            <small>Small</small>
+                                        </p>
+                                        <p class="pl-1 mb-0">
+                                            Type :
+                                            <small>type</small>
+                                        </p>
+                                    </div>
+                                    <p class="cartItemPrice">
+                                        1 x 66
+                                        <small>SAR</small>
+                                    </p>
+                                </div>
+
+                                <div class="cartItem">
+                                    <div class="mb-2 main_image_delete">
+                                        <div class="delete text-danger">
+                                            <a href="#"><i class="fa fa-times"></i></a>
+                                        </div>
+                                        <img src="images/product.jpeg" alt="art image">
+                                    </div>
+                                    <div class="cartItemInfo">
+                                        <h6>Dark Art 1</h6>
+                                        <p class="pl-1 mb-0">
+                                            Size :
+                                            <small>Small</small>
+                                        </p>
+                                        <p class="pl-1 mb-0">
+                                            Type :
+                                            <small>type</small>
+                                        </p>
+                                    </div>
+                                    <p class="cartItemPrice">
+                                        1 x 66
+                                        <small>SAR</small>
+                                    </p>
+                                </div>
+
+                                <div class="cartItem">
+                                    <div class="mb-2 main_image_delete">
+                                        <div class="delete text-danger">
+                                            <a href="#"><i class="fa fa-times"></i></a>
+                                        </div>
+                                        <img src="images/product.jpeg" alt="art image">
+                                    </div>
+                                    <div class="cartItemInfo">
+                                        <h6>Dark Art 1</h6>
+                                        <p class="pl-1 mb-0">
+                                            Size :
+                                            <small>Small</small>
+                                        </p>
+                                        <p class="pl-1 mb-0">
+                                            Type :
+                                            <small>type</small>
+                                        </p>
+                                    </div>
+                                    <p class="cartItemPrice">
+                                        1 x 66
+                                        <small>SAR</small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="proceed">
+                                <div class="total-div">
+                                    <h5>Total</h5>
+                                    <p id="total">$138.40</p>
+                                </div>
+                                <a class="shopnow" href="#">
+                                    Checkout
+                                </a>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about-us.html" class="nav-link">About us</a></li>
+                <li class="nav-item"><a href="index-wholesale.html" class="nav-link">Wholesale Inquiry</a></li>
+                <li class="nav-item"><a href="index-academy.html" class="nav-link">Academy</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="dropdown04" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">Shop Online</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown04">
+                        <a class="dropdown-item" href="filter.html">Shop</a>
+                        <a class="dropdown-item" href="products.html">Shop</a>
+                        <a class="dropdown-item" href="#">Shop</a>
+                        <a class="dropdown-item" href="#">Shop</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="profiledrop" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="profiledrop">
+                        <a class="dropdown-item" href="login.html">Login</a>
+                        <a class="dropdown-item" href="register.html">Register</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- END nav -->
+<section class="home-slider owl-carousel">
+    <div class="slider-item" style="background-image: url(images/bg_1.jpg);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+                <div class="col-md-8 col-sm-12 text-center ftco-animate">
+                    <h1 class="mb-4">Orders Details Code : #124237</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end slider section -->
+<section class="small order-details">
+    <div class="container mt-3 mt-md-5">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <div class="list-group mb-5">
+                    <div class="list-group-item p-3 bg-white" style="position: relative;">
+                        <div class="row w-100 no-gutters">
+                            <div class="col-6 col-md">
+                                <h6 class="text-charcoal mb-0 w-100">Order Number</h6>
+                                <a href="" class="text-pebble mb-0 w-100 mb-2 mb-md-0">#A915AFLE4FO</a>
+                            </div>
+                            <div class="col-6 col-md">
+                                <h6 class="text-charcoal mb-0 w-100">Date</h6>
+                                <p class="text-pebble mb-0 w-100 mb-2 mb-md-0">Aug 5th, 2022</p>
+                            </div>
+                            <div class="col-6 col-md">
+                                <h6 class="text-charcoal mb-0 w-100">Total</h6>
+                                <p class="text-pebble mb-0 w-100 mb-2 mb-md-0">19.54 SAR</p>
+                            </div>
+                            <div class="col-6 col-md">
+                                <h6 class="text-charcoal mb-0 w-100">Shipped To</h6>
+                                <p class="text-pebble mb-0 w-100 mb-2 mb-md-0">Late M. Night</p>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <a href="" class="btn btn-primary w-100">View Order</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-group-item p-3 bg-white">
+                        <div class="row no-gutters">
+                            <div class="shipment-details row">
+                                <div class="col-12 col-md-9 pr-0 pr-md-3">
+                                    <div class="alert p-2 alert-success w-100 mb-0">
+                                        <h6 class="text-green mb-0"><b>Shipped</b></h6>
+                                        <p class="text-green hidden-sm-down mb-0">Est. delivery between Aug 5 – Aug 9th,
+                                            2022</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <a href="#" class="btn btn-secondary w-100 mb-2">Track Shipment</a>
+                                </div>
+                            </div>
+                            <!--Products-->
+                            <div class="row no-gutters mt-3">
+                                <div class="col-3 col-md-1">
+                                    <img class="img-fluid pr-3" src="images/cofe.jpg" alt="">
+                                </div>
+                                <div class="col-9 col-md-8 pr-0 pr-md-3">
+                                    <h6 class="text-charcoal mb-2 mb-md-1">
+                                        <a href="" class="text-charcoal">1 x Product Name</a>
+                                    </h6>
+                                    <ul class="list-unstyled text-pebble mb-2 small">
+                                        <li class="">
+                                            <b>Kind:</b> Coffe
+                                        </li>
+                                        <li class="">
+                                            <b>Size:</b> L
+                                        </li>
+                                    </ul>
+                                    <h6 class="text-charcoal text-left mb-0 mb-md-2"><b> 19.54 SAR</b></h6>
+                                </div>
+                                <div class="col-12 col-md-3 hidden-sm-down">
+                                    <a href="#" class="btn btn-secondary w-100">View Product</a>
+                                </div>
+                            </div>
+                            <div class="row no-gutters mt-3">
+                                <div class="col-3 col-md-1">
+                                    <img class="img-fluid pr-3" src="images/cofe.jpg" alt="">
+                                </div>
+                                <div class="col-9 col-md-8 pr-0 pr-md-3">
+                                    <h6 class="text-charcoal mb-2 mb-md-1">
+                                        <a href="" class="text-charcoal">1 x Product Name</a>
+                                    </h6>
+                                    <ul class="list-unstyled text-pebble mb-2 small">
+                                        <li class="">
+                                            <b>Kind:</b> Coffe
+                                        </li>
+                                        <li class="">
+                                            <b>Size:</b> L
+                                        </li>
+                                    </ul>
+                                    <h6 class="text-charcoal text-left mb-0 mb-md-2"><b> 19.54 SAR</b></h6>
+                                </div>
+                                <div class="col-12 col-md-3 hidden-sm-down">
+                                    <a href="#" class="btn btn-secondary w-100">View Product</a>
+                                </div>
+                            </div>
+                            <div class="row no-gutters mt-3">
+                                <div class="col-3 col-md-1">
+                                    <img class="img-fluid pr-3" src="images/cofe.jpg" alt="">
+                                </div>
+                                <div class="col-9 col-md-8 pr-0 pr-md-3">
+                                    <h6 class="text-charcoal mb-2 mb-md-1">
+                                        <a href="" class="text-charcoal">1 x Product Name</a>
+                                    </h6>
+                                    <ul class="list-unstyled text-pebble mb-2 small">
+                                        <li class="">
+                                            <b>Kind:</b> Coffe
+                                        </li>
+                                        <li class="">
+                                            <b>Size:</b> L
+                                        </li>
+                                    </ul>
+                                    <h6 class="text-charcoal text-left mb-0 mb-md-2"><b> 19.54 SAR</b></h6>
+                                </div>
+                                <div class="col-12 col-md-3 hidden-sm-down">
+                                    <a href="#" class="btn btn-secondary w-100">View Product</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="pt-5 pt-md-0">
+                    <div class="list-group mb-3">
+                        <div class="list-group-item p-3 bg-snow">
+                            <h6 class="mb-0">Order Summary</h6>
+                        </div>
+                        <div class="list-group-item py-2 px-3 bg-white">
+                            <div class="row w-100 no-gutters">
+                                <div class="col-6 text-pebble">
+                                    Subtotal
+                                </div>
+                                <div class="col-6 text-right text-charcoal">
+                                    54.97 SAR
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item py-2 px-3 bg-white">
+                            <div class="row w-100 no-gutters">
+                                <div class="col-6 text-pebble">
+                                    Sales Tax
+                                </div>
+                                <div class="col-6 text-right text-charcoal">
+                                    4.30 SAR
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item py-2 px-3 bg-white">
+                            <div class="row w-100 no-gutters">
+                                <div class="col-6 text-pebble">
+                                    Shipping
+                                </div>
+                                <div class="col-6 text-right text-charcoal">
+                                    FREE
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item py-2 px-3 bg-white">
+                            <div class="row w-100 no-gutters">
+                                <div class="col-8 text-pebble">
+                                    Gift certificate
+                                </div>
+                                <div class="col-4 text-right text-red text-charcoal">
+                                    -5.55 SAR
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item py-2 px-3 bg-white">
+                            <div class="row w-100 no-gutters">
+                                <div class="col-8 text-charcoal">
+                                    <b>Total</b>
+                                </div>
+                                <div class="col-4 text-right text-green">
+                                    <b>53.65 SAR</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--footer-->
+<footer class="ftco-footer ftco-section img">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-5 mb-md-5">
+                <div class="ftco-footer-widget first-widget mb-4">
+                    <h2 class="ftco-heading-2">NEED HELP? CALL US</h2>
+                    <div class="block-23 mb-3">
+                        <ul>
+                            <li>
+                                <span class="text">Monday–Friday 8 a.m–4:30 p.m. (EST)</span>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="text">+96000000000</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="text">methods@info.com</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-1">
+                        <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                        <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                        <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5 mb-md-5">
+                <div class="ftco-footer-widget center-widget mb-4">
+                    <div class="footer-btn">
+                        <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Contact Us</a>
+                    </div>
+                    <div class="footer-logo">
+                        <a href="#">
+                            <img src="images/sec_logo.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-5 mb-md-5">
+                <div class="ftco-footer-widget last-widget mb-4 ml-md-4">
+                    <h2 class="ftco-heading-2 text-uppercase">sign up for our newsletter</h2>
+                    <a class="newsletter-link" data-toggle="modal" data-target="#exampleModalCenter">
+                        Enter Your Email
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                    <p>Copyright Methods Coffee © 2022</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00"/>
+    </svg>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/jquery.timepicker.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+<!--addition js-->
+<script src="js/fotorama.js"></script>
+<script src="js/star-rating.min.js"></script>
+<!--end addition js-->
+<script src="js/main.js"></script>
+
+<script>
+    $(document).ready(function () {
+        var quantitiy = 0;
+        $('.quantity-right-plus').click(function (e) {
+
+            // Stop acting like a button
+            e.preventDefault();
+            // Get the field name
+            var quantity = parseInt($('#quantity').val());
+
+            // If is not undefined
+
+            $('#quantity').val(quantity + 1);
+
+
+            // Increment
+
+        });
+
+        $('.quantity-left-minus').click(function (e) {
+            // Stop acting like a button
+            e.preventDefault();
+            // Get the field name
+            var quantity = parseInt($('#quantity').val());
+
+            // If is not undefined
+
+            // Increment
+            if (quantity > 0) {
+                $('#quantity').val(quantity - 1);
+            }
+        });
+
+    });
+</script>
+<!--rate results js-->
+<script>
+    let rateBox = Array.from(document.querySelectorAll(".rate-box"));
+    let globalValue = document.querySelector(".global-value");
+    let two = document.querySelector(".two");
+    let totalReviews = document.querySelector(".total-reviews");
+    //edits here by php
+    let reviews = {
+        5: 1,
+        4: 0,
+        3: 0,
+        2: 0,
+        1: 0,
+    };
+    // END edits here by php
+    updateValues();
+
+    function updateValues() {
+        rateBox.forEach((box) => {
+            let valueBox = rateBox[rateBox.indexOf(box)].querySelector(".value");
+            let countBox = rateBox[rateBox.indexOf(box)].querySelector(".count");
+            let progress = rateBox[rateBox.indexOf(box)].querySelector(".progress");
+            console.log(typeof reviews[valueBox.innerHTML]);
+            countBox.innerHTML = nFormat(reviews[valueBox.innerHTML]);
+
+            let progressValue = Math.round(
+                (reviews[valueBox.innerHTML] / getTotal(reviews)) * 100
+            );
+            progress.style.width = `${progressValue}%`;
+        });
+        totalReviews.innerHTML = getTotal(reviews);
+        finalRating();
+    }
+
+    function getTotal(reviews) {
+        return Object.values(reviews).reduce((a, b) => a + b);
+    }
+
+    document.querySelectorAll(".value").forEach((element) => {
+        element.addEventListener("click", () => {
+            let target = element.innerHTML;
+            reviews[target] += 1;
+            updateValues();
+        });
+    });
+
+    function finalRating() {
+        let final = Object.entries(reviews)
+            .map((val) => val[0] * val[1])
+            .reduce((a, b) => a + b);
+        // console.log(typeof parseFloat(final / getTotal(reviews)).toFixed(1));
+        let ratingValue = nFormat(parseFloat(final / getTotal(reviews)).toFixed(1));
+        globalValue.innerHTML = ratingValue;
+        two.style.background = `linear-gradient(to right, #ffd700 ${
+        (ratingValue / 5) * 100
+            }%, transparent 0%)`;
+    }
+
+    function nFormat(number) {
+        if (number >= 1000 && number < 1000000) {
+            return `${number.toString().slice(0, -3)}k`;
+        } else if (number >= 1000000 && number < 1000000000) {
+            return `${number.toString().slice(0, -6)}m`;
+        } else if (number >= 1000000000) {
+            return `${number.toString().slice(0, -9)}md`;
+        } else if (number === "NaN") {
+            return `0.0`;
+        } else {
+            return number;
+        }
+    }
+
+    $('.no').click(function () {
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')) {
+            $(this).find('span').text(+1);
+            if ($(this).parent().find('.yeah').hasClass('active') && $(this).hasClass('active')) {
+                $(this).parent().find('.yeah span').text($(this).parent().find('.yeah span').text() - 1);
+            } else if (!$(this).parent().find('.yeah').hasClass('active') && $(this).hasClass('active')) {
+                $(this).parent().find('.yeah span').text($(this).parent().find('.yeah span').text());
+            }
+        } else {
+            $(this).find('span').text($(this).find('span').text() - 1);
+        }
+        $(this).parent().find('.yeah').removeClass('active');
+        $(this).parent().find('span').removeClass('active');
+
+    });
+    $('.yeah').click(function () {
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')) {
+            $(this).find('span').text(+1);
+            if ($(this).parent().find('.no').hasClass('active') && $(this).hasClass('active')) {
+                $(this).parent().find('.no span').text($(this).parent().find('.no span').text() - 1);
+            } else if (!$(this).parent().find('.no').hasClass('active') && $(this).hasClass('active')) {
+                $(this).parent().find('.no span').text($(this).parent().find('.no span').text());
+            }
+        } else {
+            $(this).find('span').text($(this).find('span').text() - 1);
+        }
+        $(this).parent().find('.no').removeClass('active');
+        $(this).parent().find('span').removeClass('active');
+    });
+</script>
+</body>
+</html>
