@@ -33,7 +33,7 @@
     <meta property='og:image' content='images/favicon.png'>
     <meta name='twitter:image' content='images/favicon.png'>
     <meta property='og:type' content='Methods'>
-    <title>Methods - Order Details</title>
+    <title>Methods - Course Name</title>
 
     <!--<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">-->
     <!--<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">-->
@@ -50,10 +50,10 @@
     <link rel="stylesheet" href="css/jquery.timepicker.css">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
-
     <!--addition css-->
     <link href="css/fotorama.css" rel="stylesheet">
     <link href="css/star-rating.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
     <!--end addition css-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-ar.css">
@@ -84,8 +84,7 @@
     </div>
 </div>
 <!--end subscribe modal-->
-
-<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light dark-nav" id="ftco-navbar">
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="top-header">
         <div class="container">
             <div class="row">
@@ -93,8 +92,7 @@
                     <div class="selection-div">
 
                         <div class="dropdown country-drop">
-                            <a class="btn top-btn dropdown-toggle" href="#" role="button" id="countrydrop"
-                               data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="btn top-btn dropdown-toggle" href="#" role="button" id="countrydrop" data-bs-toggle="dropdown" aria-expanded="false">
                                 Country
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="countrydrop">
@@ -104,8 +102,7 @@
                             </ul>
                         </div>
                         <div class="dropdown lang-drop">
-                            <a class="btn top-btn dropdown-toggle" href="#" role="button" id="langdrop"
-                               data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="btn top-btn dropdown-toggle" href="#" role="button" id="langdrop" data-bs-toggle="dropdown" aria-expanded="false">
                                 English
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="langdrop">
@@ -264,197 +261,154 @@
 
     </div>
 </nav>
-
 <!-- END nav -->
-<section class="home-slider owl-carousel">
-    <div class="slider-item" style="background-image: url(images/bg_1.jpg);">
+<section class="small home-slider owl-carousel">
+    <div class="slider-item"
+         style="background-image: url(https://vevok-chef.com//media/catalog/category/category-banner.jpg);"
+         data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
-            <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
-                <div class="col-md-8 col-sm-12 text-center ftco-animate">
-                    <h1 class="mb-4">Orders Details Code : #124237</h1>
+            <div class="row slider-text justify-content-center align-items-center">
+                <div class="col-md-7 col-sm-12 text-center ftco-animate">
+                    <h1 class="mb-3 mt-5 bread">Course Name</h1>
+                    <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span>
+                        <span class="mr-2"><a href="index.html">Courses</a></span>
+                        <span>Course Name</span></p>
                 </div>
+
             </div>
         </div>
     </div>
 </section>
-<!-- end slider section -->
-<section class="small order-details">
-    <div class="container mt-3 mt-md-5">
-        <div class="row">
-            <div class="col-12 col-md-8">
-                <div class="list-group mb-5">
-                    <div class="list-group-item p-3 bg-white" style="position: relative;">
-                        <div class="row w-100 no-gutters">
-                            <div class="col-6 col-md">
-                                <h6 class="text-charcoal mb-0 w-100">Order Number</h6>
-                                <a href="" class="text-pebble mb-0 w-100 mb-2 mb-md-0">#A915AFLE4FO</a>
-                            </div>
-                            <div class="col-6 col-md">
-                                <h6 class="text-charcoal mb-0 w-100">Date</h6>
-                                <p class="text-pebble mb-0 w-100 mb-2 mb-md-0">Aug 5th, 2022</p>
-                            </div>
-                            <div class="col-6 col-md">
-                                <h6 class="text-charcoal mb-0 w-100">Total</h6>
-                                <p class="text-pebble mb-0 w-100 mb-2 mb-md-0">19.54 SAR</p>
-                            </div>
-                            <div class="col-6 col-md">
-                                <h6 class="text-charcoal mb-0 w-100">Shipped To</h6>
-                                <p class="text-pebble mb-0 w-100 mb-2 mb-md-0">Late M. Night</p>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <a href="" class="btn btn-primary w-100">View Order</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="list-group-item p-3 bg-white">
-                        <div class="row no-gutters">
-                            <div class="shipment-details">
-                                <div class="col-12 col-md-9 pr-0 pr-md-3">
-                                    <div class="alert p-2 alert-success w-100 mb-0">
-                                        <h6 class="text-green mb-0"><b>Shipped</b></h6>
-                                        <p class="text-green hidden-sm-down mb-0">Est. delivery between Aug 5 – Aug 9th,
-                                            2022</p>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-3">
-                                    <a href="#" class="btn btn-secondary w-100 mb-2">Track Shipment</a>
-                                </div>
-                            </div>
-                            <!--Products-->
-                            <div class="row no-gutters mt-3">
-                                <div class="col-3 col-md-1">
-                                    <img class="img-fluid pr-3" src="images/cofe.jpg" alt="">
-                                </div>
-                                <div class="col-9 col-md-8 pr-0 pr-md-3">
-                                    <h6 class="text-charcoal mb-2 mb-md-1">
-                                        <a href="" class="text-charcoal">1 x Product Name</a>
-                                    </h6>
-                                    <ul class="list-unstyled text-pebble mb-2 small">
-                                        <li class="">
-                                            <b>Kind:</b> Coffe
-                                        </li>
-                                        <li class="">
-                                            <b>Size:</b> L
-                                        </li>
-                                    </ul>
-                                    <h6 class="text-charcoal text-left mb-0 mb-md-2"><b> 19.54 SAR</b></h6>
-                                </div>
-                                <div class="col-12 col-md-3 hidden-sm-down">
-                                    <a href="#" class="btn btn-secondary w-100">View Product</a>
-                                </div>
-                            </div>
-                            <div class="row no-gutters mt-3">
-                                <div class="col-3 col-md-1">
-                                    <img class="img-fluid pr-3" src="images/cofe.jpg" alt="">
-                                </div>
-                                <div class="col-9 col-md-8 pr-0 pr-md-3">
-                                    <h6 class="text-charcoal mb-2 mb-md-1">
-                                        <a href="" class="text-charcoal">1 x Product Name</a>
-                                    </h6>
-                                    <ul class="list-unstyled text-pebble mb-2 small">
-                                        <li class="">
-                                            <b>Kind:</b> Coffe
-                                        </li>
-                                        <li class="">
-                                            <b>Size:</b> L
-                                        </li>
-                                    </ul>
-                                    <h6 class="text-charcoal text-left mb-0 mb-md-2"><b> 19.54 SAR</b></h6>
-                                </div>
-                                <div class="col-12 col-md-3 hidden-sm-down">
-                                    <a href="#" class="btn btn-secondary w-100">View Product</a>
-                                </div>
-                            </div>
-                            <div class="row no-gutters mt-3">
-                                <div class="col-3 col-md-1">
-                                    <img class="img-fluid pr-3" src="images/cofe.jpg" alt="">
-                                </div>
-                                <div class="col-9 col-md-8 pr-0 pr-md-3">
-                                    <h6 class="text-charcoal mb-2 mb-md-1">
-                                        <a href="" class="text-charcoal">1 x Product Name</a>
-                                    </h6>
-                                    <ul class="list-unstyled text-pebble mb-2 small">
-                                        <li class="">
-                                            <b>Kind:</b> Coffe
-                                        </li>
-                                        <li class="">
-                                            <b>Size:</b> L
-                                        </li>
-                                    </ul>
-                                    <h6 class="text-charcoal text-left mb-0 mb-md-2"><b> 19.54 SAR</b></h6>
-                                </div>
-                                <div class="col-12 col-md-3 hidden-sm-down">
-                                    <a href="#" class="btn btn-secondary w-100">View Product</a>
-                                </div>
+<section class="course-page">
+    <div class="container my-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-8">
+                <video id="player" playsinline controls data-poster="images/menu-1.jpg">
+                    <source src="images/coffe.mp4" type="video/mp4" />
+                    <!-- Captions are optional -->
+                    <track kind="captions" label="English captions" src="/path/to/captions.vtt" srclang="en" default />
+                </video>
+                <div class="mx-auto text-secondary course-top-section">
+                    <h1 class="font-weight-bold text-dark">
+                        Lorem Ipsum is simply dummy
+                    </h1>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since.
+                    </p>
+                </div>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Details</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                        <div class="mx-auto text-secondary mt-5">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
+                                five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <br>
+                            <br>
+                            <h3 class="font-weight-bold text-dark">#1. What is Lorem Ipsum?</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
+                                five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <br>
+
+                            <blockquote class="text-primary p-3">Lorem
+                                Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                standard dummy text ever since the 1500s
+                            </blockquote>
+                            <br>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
+                                five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <div class="hashtags">
+                                <small>
+                                    <a href="#" class="text-primary">#hashtag</a>,
+                                    <a href="#" class="text-primary">#hashtag</a>,
+                                    <a href="#" class="text-primary">#hashtag</a>,
+                                    <a href="#" class="text-primary">#hashtag</a>,
+                                    <a href="#" class="text-primary">#hashtag</a>
+                                </small>
                             </div>
                         </div>
+
                     </div>
                 </div>
-            </div>
 
-            <div class="col-12 col-md-4">
-                <div class="pt-5 pt-md-0">
-                    <div class="list-group mb-3">
-                        <div class="list-group-item p-3 bg-snow">
-                            <h6 class="mb-0">Order Summary</h6>
-                        </div>
-                        <div class="list-group-item py-2 px-3 bg-white">
-                            <div class="row w-100 no-gutters">
-                                <div class="col-6 text-pebble">
-                                    Subtotal
-                                </div>
-                                <div class="col-6 text-right text-charcoal">
-                                    54.97 SAR
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group-item py-2 px-3 bg-white">
-                            <div class="row w-100 no-gutters">
-                                <div class="col-6 text-pebble">
-                                    Sales Tax
-                                </div>
-                                <div class="col-6 text-right text-charcoal">
-                                    4.30 SAR
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group-item py-2 px-3 bg-white">
-                            <div class="row w-100 no-gutters">
-                                <div class="col-6 text-pebble">
-                                    Shipping
-                                </div>
-                                <div class="col-6 text-right text-charcoal">
-                                    FREE
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group-item py-2 px-3 bg-white">
-                            <div class="row w-100 no-gutters">
-                                <div class="col-8 text-pebble">
-                                    Gift certificate
-                                </div>
-                                <div class="col-4 text-right text-red text-charcoal">
-                                    -5.55 SAR
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group-item py-2 px-3 bg-white">
-                            <div class="row w-100 no-gutters">
-                                <div class="col-8 text-charcoal">
-                                    <b>Total</b>
-                                </div>
-                                <div class="col-4 text-right text-green">
-                                    <b>53.65 SAR</b>
-                                </div>
-                            </div>
-                        </div>
+            </div>
+            <div class="col-md-4">
+                <div class="enroll-section">
+                    <div class="card-body">
+                        <ul class="videos-list">
+                            <li class="active">
+                                <a href="#">
+                                    <img src="images/cofe.jpg" alt=""/>
+                                    Video Name
+                                    <small class="new-time">2 min</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/cofe.jpg" alt=""/>
+                                    Video Name
+                                    <small class="new-time">2 min</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/cofe.jpg" alt=""/>
+                                    Video Name
+                                    <small class="new-time">2 min</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/cofe.jpg" alt=""/>
+                                    Video Name
+                                    <small class="new-time">2 min</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/cofe.jpg" alt=""/>
+                                    Video Name
+                                    <small class="new-time">2 min</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/cofe.jpg" alt=""/>
+                                    Video Name
+                                    <small class="new-time">2 min</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/cofe.jpg" alt=""/>
+                                    Video Name
+                                    <small class="new-time">2 min</small>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </section>
 <!--footer-->
 <footer class="ftco-footer ftco-section img">
@@ -544,144 +498,10 @@
 <!--end addition js-->
 <script src="js/main.js"></script>
 
+<script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script>
 <script>
-    $(document).ready(function () {
-        var quantitiy = 0;
-        $('.quantity-right-plus').click(function (e) {
-
-            // Stop acting like a button
-            e.preventDefault();
-            // Get the field name
-            var quantity = parseInt($('#quantity').val());
-
-            // If is not undefined
-
-            $('#quantity').val(quantity + 1);
-
-
-            // Increment
-
-        });
-
-        $('.quantity-left-minus').click(function (e) {
-            // Stop acting like a button
-            e.preventDefault();
-            // Get the field name
-            var quantity = parseInt($('#quantity').val());
-
-            // If is not undefined
-
-            // Increment
-            if (quantity > 0) {
-                $('#quantity').val(quantity - 1);
-            }
-        });
-
-    });
+    const player = new Plyr('#player');
 </script>
-<!--rate results js-->
-<script>
-    let rateBox = Array.from(document.querySelectorAll(".rate-box"));
-    let globalValue = document.querySelector(".global-value");
-    let two = document.querySelector(".two");
-    let totalReviews = document.querySelector(".total-reviews");
-    //edits here by php
-    let reviews = {
-        5: 1,
-        4: 0,
-        3: 0,
-        2: 0,
-        1: 0,
-    };
-    // END edits here by php
-    updateValues();
 
-    function updateValues() {
-        rateBox.forEach((box) => {
-            let valueBox = rateBox[rateBox.indexOf(box)].querySelector(".value");
-            let countBox = rateBox[rateBox.indexOf(box)].querySelector(".count");
-            let progress = rateBox[rateBox.indexOf(box)].querySelector(".progress");
-            console.log(typeof reviews[valueBox.innerHTML]);
-            countBox.innerHTML = nFormat(reviews[valueBox.innerHTML]);
-
-            let progressValue = Math.round(
-                (reviews[valueBox.innerHTML] / getTotal(reviews)) * 100
-            );
-            progress.style.width = `${progressValue}%`;
-        });
-        totalReviews.innerHTML = getTotal(reviews);
-        finalRating();
-    }
-
-    function getTotal(reviews) {
-        return Object.values(reviews).reduce((a, b) => a + b);
-    }
-
-    document.querySelectorAll(".value").forEach((element) => {
-        element.addEventListener("click", () => {
-            let target = element.innerHTML;
-            reviews[target] += 1;
-            updateValues();
-        });
-    });
-
-    function finalRating() {
-        let final = Object.entries(reviews)
-            .map((val) => val[0] * val[1])
-            .reduce((a, b) => a + b);
-        // console.log(typeof parseFloat(final / getTotal(reviews)).toFixed(1));
-        let ratingValue = nFormat(parseFloat(final / getTotal(reviews)).toFixed(1));
-        globalValue.innerHTML = ratingValue;
-        two.style.background = `linear-gradient(to right, #ffd700 ${
-        (ratingValue / 5) * 100
-            }%, transparent 0%)`;
-    }
-
-    function nFormat(number) {
-        if (number >= 1000 && number < 1000000) {
-            return `${number.toString().slice(0, -3)}k`;
-        } else if (number >= 1000000 && number < 1000000000) {
-            return `${number.toString().slice(0, -6)}m`;
-        } else if (number >= 1000000000) {
-            return `${number.toString().slice(0, -9)}md`;
-        } else if (number === "NaN") {
-            return `0.0`;
-        } else {
-            return number;
-        }
-    }
-
-    $('.no').click(function () {
-        $(this).toggleClass('active');
-        if ($(this).hasClass('active')) {
-            $(this).find('span').text(+1);
-            if ($(this).parent().find('.yeah').hasClass('active') && $(this).hasClass('active')) {
-                $(this).parent().find('.yeah span').text($(this).parent().find('.yeah span').text() - 1);
-            } else if (!$(this).parent().find('.yeah').hasClass('active') && $(this).hasClass('active')) {
-                $(this).parent().find('.yeah span').text($(this).parent().find('.yeah span').text());
-            }
-        } else {
-            $(this).find('span').text($(this).find('span').text() - 1);
-        }
-        $(this).parent().find('.yeah').removeClass('active');
-        $(this).parent().find('span').removeClass('active');
-
-    });
-    $('.yeah').click(function () {
-        $(this).toggleClass('active');
-        if ($(this).hasClass('active')) {
-            $(this).find('span').text(+1);
-            if ($(this).parent().find('.no').hasClass('active') && $(this).hasClass('active')) {
-                $(this).parent().find('.no span').text($(this).parent().find('.no span').text() - 1);
-            } else if (!$(this).parent().find('.no').hasClass('active') && $(this).hasClass('active')) {
-                $(this).parent().find('.no span').text($(this).parent().find('.no span').text());
-            }
-        } else {
-            $(this).find('span').text($(this).find('span').text() - 1);
-        }
-        $(this).parent().find('.no').removeClass('active');
-        $(this).parent().find('span').removeClass('active');
-    });
-</script>
 </body>
 </html>

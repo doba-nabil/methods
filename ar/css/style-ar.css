@@ -159,3 +159,19 @@ ul{
     left: 0;
 }
 
+
+.order-details .text-charcoal.text-left{
+    text-align: right!important;
+}
+.order-details .text-charcoal.text-right{
+    text-align: left!important;
+}
+.list-group-item .col-4.text-right{
+    text-align: left!important;
+}
+.row.no-gutters{
+    margin: 0!important;
+}
+.order-details .img-fluid{
+    padding-left: 1em;
+}
