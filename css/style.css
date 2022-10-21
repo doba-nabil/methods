@@ -4426,6 +4426,8 @@ input[type="button"].btn-block {
 
 .navbar-brand img {
     width: 100%;
+    max-height: 40px;
+    object-fit: contain;
 }
 
 .navbar-brand:hover, .navbar-brand:focus {
@@ -4815,7 +4817,7 @@ input[type="button"].btn-block {
     color: rgba(0, 0, 0, 0.9);
 }
 .navbar-dark{
-   padding-top: 0;
+    padding-top: 0;
     padding-right: 0;
     padding-left: 0;
 }
@@ -10398,12 +10400,12 @@ h1, h2, h3, h4, h5,
     /*padding-top: 0.3em;*/
 }
 /*.proceed {*/
-    /*position: absolute;*/
-    /*bottom: 0;*/
-    /*width: 100%;*/
-    /*left: 0;*/
-    /*right: 0;*/
-    /*z-index: 8999899999;*/
+/*position: absolute;*/
+/*bottom: 0;*/
+/*width: 100%;*/
+/*left: 0;*/
+/*right: 0;*/
+/*z-index: 8999899999;*/
 /*}*/
 .shopnow {
     background-color: var(--main-color);
@@ -10427,7 +10429,7 @@ h1, h2, h3, h4, h5,
 
 .price {
     color: slategrey;
-    font-size: 2em;
+    font-size: 1em;
 }
 .total-div{
     display: flex;
@@ -14019,7 +14021,7 @@ textarea.form-control {
     border: 1px solid #fff;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 20%;
     opacity: .6;
     -webkit-transition: all .12s, border-color .08s;
     transition: all .12s, border-color .08s;
@@ -14090,7 +14092,7 @@ textarea.form-control {
     height: 40px;
     outline: none;
     color: #212121;
-    font-size: 22px;
+    font-size: 15px;
     font-weight: 400;
     background: none;
     border: none;
@@ -14162,6 +14164,7 @@ textarea.form-control {
     margin-left: 50px;
 }
 .login-page .log a {
+    text-align: end;
     text-decoration: none;
     color: var(--main-color);
     font-size: 1rem;
@@ -14462,7 +14465,7 @@ textarea.form-control {
 .products-blocks .nav-pills{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 .products-blocks .nav-link{
     cursor: pointer;
@@ -14592,7 +14595,7 @@ textarea.form-control {
     text-align: start!important;
 }
 .product-page .final-steps-product .input-group{
-   width: 50%;
+    width: 50%;
 }
 .product-page .final-steps-product label{
     padding-top: 6%;
@@ -14691,7 +14694,7 @@ textarea.form-control {
     transition: 300ms ease-in-out;
 }
 .product-reviews .rate-box i {
-   font-size: 12px;
+    font-size: 12px;
     color: grey;
 }
 .product-reviews .rate-box i:hover {
@@ -14708,7 +14711,7 @@ textarea.form-control {
     gap: 8px;
 }
 .product-reviews .global .based{
-   margin-bottom: 0;
+    margin-bottom: 0;
 }
 .product-reviews .one .fas {
     color: #cfd8dc;
@@ -14778,7 +14781,7 @@ textarea.form-control {
     border-radius: 0;
 }
 .new-review-modal .modal-content .modal-footer , .new-review-modal .modal-content .modal-header{
-   border: none!important;
+    border: none!important;
 }
 .new-review-modal .rating-container{
     display: inline-block;
@@ -14935,13 +14938,13 @@ textarea.form-control {
     margin-top: 0.5em;
 }
 .product-reviews #testimonials .helpful .active.yeah{
-   color: #51ff7a;
+    color: #51ff7a;
 }
 .product-reviews #testimonials .helpful .active.no{
-   color: #ff5442;
+    color: #ff5442;
 }
 .product-reviews #testimonials .share{
-   position: absolute;
+    position: absolute;
     bottom: 0em;
     left: 0em;
 }
@@ -15110,7 +15113,7 @@ textarea.form-control {
     padding-top: 1em;
 }
 .cart-page .cart-btns .btn{
-   padding: 1em 2em;
+    padding: 1em 2em;
     font-size: 16px;
     -webkit-box-flex: 1;
     -ms-flex: 0 0 49%;
@@ -15131,7 +15134,7 @@ textarea.form-control {
     font-weight: bold;
 }
 .course-page .hashtags{
-  margin: 3em 0;
+    margin: 3em 0;
 }
 .course-page .course-top-section{
 

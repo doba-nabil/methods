@@ -78,7 +78,7 @@ AOS.init({
         var items = $('.slider-item');
         $('.home-slider').owlCarousel({
             loop: items.length > 1 ? true : false,
-            autoplay: false,
+            autoplay: true,
             margin: 0,
             animateOut: 'fadeOut',
             animateIn: 'fadeIn',
