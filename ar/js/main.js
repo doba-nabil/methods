@@ -95,7 +95,7 @@ $(function () {
             }
         });
         $('.description-slider').owlCarousel({
-            loop: true,
+            loop: false,
             autoplay: false,
             margin: 0,
             animateOut: 'fadeOut',
@@ -121,7 +121,7 @@ $(function () {
             }
         });
         $('.products-slider').owlCarousel({
-            loop: true,
+            loop: false,
             autoplay: true,
             margin: 20,
             animateOut: 'fadeOut',
@@ -146,7 +146,7 @@ $(function () {
             }
         });
         $('.courses-slider').owlCarousel({
-            loop: true,
+            loop: false,
             autoplay: true,
             margin: 20,
             animateOut: 'fadeOut',
@@ -171,7 +171,7 @@ $(function () {
             }
         });
         $('.opinion-slider').owlCarousel({
-            loop: true,
+            loop: false,
             autoplay: true,
             margin: 20,
             animateOut: 'fadeOut',
@@ -196,7 +196,7 @@ $(function () {
             }
         });
         $('.team-slider').owlCarousel({
-            loop: true,
+            loop: false,
             autoplay: true,
             margin: 20,
             animateOut: 'fadeOut',
