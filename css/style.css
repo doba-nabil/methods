@@ -12573,7 +12573,9 @@ textarea.form-control {
 
 .products-section .menu-entry .img {
     display: inline-block;
-    height: 200px;
+    height: 250px;
+    width: 100%;
+    background-size: cover;
 }
 
 .products-section .menu-entry p {
