@@ -1,3 +1,61 @@
+$('.type').change(function () {
+    if ($('.type').val() == 'house') {
+        $('.company-div').hide(300);
+        $('.flate-div').hide(300);
+        $('.house-div').show(300);
+    } else if ($('.type').val() == 'flate') {
+        $('.company-div').hide(300);
+        $('.house-div').hide(300);
+        $('.flate-div').show(300);
+    } else if ($('.type').val() == 'company') {
+        $('.house-div').hide(300);
+        $('.flate-div').hide(300);
+        $('.company-div').show(300);
+    } else {
+        $('.house-div').hide(300);
+        $('.flate-div').hide(300);
+        $('.company-div').hide(300);
+    }
+});
+
+if ($('.type').val() == 'house') {
+    $('.company-div').hide(1);
+    $('.flate-div').hide(1);
+    $('.house-div').show(1);
+} else if ($('.type').val() == 'flate') {
+    $('.company-div').hide(1);
+    $('.house-div').hide(1);
+    $('.flate-div').show(1);
+} else if ($('.type').val() == 'company') {
+    $('.house-div').hide(1);
+    $('.flate-div').hide(1);
+    $('.company-div').show(1);
+} else {
+    $('.house-div').hide(1);
+    $('.flate-div').hide(1);
+    $('.company-div').hide(1);
+}
+
+
+$(".member").click(function () {
+    if ($(this).is(":checked")) {
+        $('.email-div').hide(300);
+        $('.login-div').show(300);
+    } else {
+        $('.login-div').hide(300);
+        $('.email-div').show(300);
+    }
+});
+
+if ($(".member").is(":checked")) {
+    $('.email-div').hide(1);
+    $('.login-div').show(1);
+} else {
+    $('.login-div').hide(1);
+    $('.email-div').show(1);
+}
+
+
 AOS.init({
     duration: 800,
     easing: 'slide'

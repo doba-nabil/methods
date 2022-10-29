@@ -14032,7 +14032,7 @@ textarea.form-control {
 
 .boxes input[type="checkbox"]:checked + label:before {
     width: 10px;
-    top: -5px;
+    top: 0px;
     left: 5px;
     border-radius: 0;
     opacity: 1;
@@ -14057,7 +14057,7 @@ textarea.form-control {
     background: url(../images/form_back.webp) no-repeat fixed;
     background-size: cover;
     padding: 30px 0;
-    margin-top: 10em;
+    margin-top: 15em;
     border-radius: 3px;
 }
 .login-page .log .head {
@@ -15258,6 +15258,9 @@ textarea.form-control {
     .payment-status{
         padding-top: 3em;
     }
+    .login-page .log {
+        margin-top: 5em;
+    }
 }
 .payment-status-card p {
     color: #404F5E;
@@ -16086,4 +16089,27 @@ textarea.form-control {
 }
 .course-single-page .icon-circle:before{
     display: none;
+}
+
+/*payment page*/
+.contry_key{
+    border-right:1px solid grey!important;
+}
+.phone_number_input::-webkit-outer-spin-button,
+.phone_number_input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.phone_number_input[type=number] {
+    -moz-appearance: textfield;
+}
+/*header edits*/
+nav.awake {
+    border-top: none !important;
+}
+nav.awake .top-header .selection-div {
+     padding-bottom: 0px;
+}
+nav.awake .top-header .selection-div .dropdown.country-drop {
+     padding-bottom: 0px;
 }

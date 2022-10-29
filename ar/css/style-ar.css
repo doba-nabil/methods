@@ -180,3 +180,7 @@ ul{
 .order-details .img-fluid{
     padding-left: 1em;
 }
+.contry_key {
+    border-right: none!important;
+    border-left: 1px solid grey!important;
+}
